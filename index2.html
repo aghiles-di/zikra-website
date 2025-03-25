@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ <html lang="ar">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ذِكر - موقع الأدعية والتسبيح</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             text-align: center;
+             background: url('https://source.unsplash.com/1600x900/?islamic,mosque') no-repeat center center fixed;
+             background-size: cover;
+             direction: rtl;
+             margin: 0;
+             padding: 0;
+             color: white;
+         }
+         .container {
+             max-width: 800px;
+             margin: auto;
+             padding: 20px;
+             background: rgba(0, 0, 0, 0.7);
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+             border-radius: 10px;
+         }
+         h1 {
+             color: #FFD700;
+             font-size: 2rem;
+         }
+         .button {
+             display: block;
+             padding: 15px;
+             margin: 10px auto;
+             text-decoration: none;
+             background: #FFD700;
+             color: black;
+             border-radius: 5px;
+             width: 60%;
+             font-weight: bold;
+         }
+         .footer {
+             margin-top: 20px;
+             padding: 10px;
+             background: black;
+             color: white;
+             text-align: center;
+         }
+         .section {
+             margin: 20px;
+             padding: 20px;
+             background: rgba(0, 0, 0, 0.8);
+             border-radius: 10px;
+         }
+         .counter {
+             font-size: 2rem;
+             color: #FFD700;
+         }
+     </style>
+ </head>
+ <body>
+     <div class="container">
+         <h1>موقع ذِكر</h1>
+         <p>هذا الموقع وقف لله تعالى، صدقة جارية لموتى بلدية الثنية والمسلمين جميعًا.</p>
+         <a href="#ad3ia" class="button">📖 الأدعية اليومية</a>
+         <a href="#tasbih" class="button">🕌 التسبيح</a>
+         <a href="#quran" class="button">📖 القرآن الكريم</a>
+         <a href="#sadaka" class="button">🤲 كيفية التصدق</a>
+     </div>
+     
+     <div id="ad3ia" class="section">
+         <h2>📖 الأدعية اليومية</h2>
+         <p>اللهم إني أسألك العفو والعافية في الدنيا والآخرة.</p>
+         <p>اللهم اجعل هذا الموقع صدقة جارية لنا ولجميع المسلمين.</p>
+         <p>اللهم اغفر لي ولوالدي ولجميع المسلمين الأحياء منهم والأموات.</p>
+         <p>اللهم إني أعوذ بك من الهم والحزن والعجز والكسل.</p>
+         <p>اللهم اجعل القرآن ربيع قلوبنا ونور صدورنا وجلاء همومنا.</p>
+     </div>
+     
+     <div id="tasbih" class="section">
+         <h2>🕌 التسبيح</h2>
+         <p>سبحان الله، والحمد لله، ولا إله إلا الله، والله أكبر.</p>
+         <p>لا حول ولا قوة إلا بالله العلي العظيم.</p>
+         <h3>🧮 عداد التسبيح</h3>
+         <p class="counter" id="tasbihCounter">0</p>
+         <button onclick="increaseCount()">➕ زيادة</button>
+         <button onclick="resetCount()">🔄 إعادة تعيين</button>
+     </div>
+     
+     <div id="quran" class="section">
+         <h2>📖 القرآن الكريم</h2>
+         <p>الاستماع إلى القرآن الكريم:</p>
+         <audio controls>
+             <source src="https://server8.mp3quran.net/afs/001.mp3" type="audio/mpeg">
+         </audio>
+         <h3>📖 قراءة المصحف الإلكتروني</h3>
+         <p>يمكنك قراءة القرآن الكريم من خلال <a href="https://quran.com/" target="_blank">هذا الرابط</a></p>
+     </div>
+     
+     <div id="sadaka" class="section">
+         <h2>🤲 كيفية التصدق</h2>
+         <p>أفضل الصدقات: سقيا الماء، إطعام الفقراء، كفالة الأيتام.</p>
+     </div>
+     
+     <div class="footer">
+         <p>جميع الحقوق محفوظة &copy; 2025 - موقع ذِكر | صدقة جارية</p>
+     </div>
+     
+     <script>
+         let count = 0;
+         function increaseCount() {
+             count++;
+             document.getElementById("tasbihCounter").textContent = count;
+         }
+         function resetCount() {
+             count = 0;
+             document.getElementById("tasbihCounter").textContent = count;
+         }
+     </script>
+ </body>
+ </html>
